@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .x
+        {
+            height: 400px;
+            width: 800px;
+            background: url(girl.jpg);
+            position: relative;
+            overflow: hidden;
+        }
+        .y
+        {
+            height:400px;
+            width: 800px;
+            background: rgba(0, 0, 0, 0.2);
+            top: 100%;
+            right: 100%;
+            position: absolute;
+            transition: 1s;
+        }
+        .x:hover .y
+        {
+            right: 0%;
+            top: 0%;
+        }
+        .z
+        {
+            height:400px;
+            width: 800px;
+            background: rgba(0, 0, 0, 0.1);
+            transform: translate(0px 100px);
+            bottom: 100%;
+            left: 100%;
+            position: absolute;
+            transition: 1s;
+        }
+        .x:hover .z
+        {
+            bottom: 0%;
+            left: 0%;
+            
+        }
+        
+       
+
+
+        .p
+        {
+            height: 400px;
+            width: 800px;
+            background: url(suit.jpg);
+            position: relative;
+            overflow: hidden;
+            
+        }
+        .p::before
+        {  content: "";
+            height:400px;
+            width: 800px;
+            background: rgba(0, 0, 0, 0.2);
+            top: 100%;
+            right: 100%;
+            position: absolute;
+            transition: 1s;
+        }
+        .p:hover::before
+        {
+            right: 0%;
+            top: 0%;
+        }
+        .p::after
+        {   content: "";
+            height:400px;
+            width: 800px;
+            background: rgba(0, 0, 0, 0.1);
+            transform: translate(0px 100px);
+            bottom: 100%;
+            left: 100%;
+            position: absolute;
+            transition: 1s;
+        }
+        .p:hover::after
+        {
+            bottom: 0%;
+            left: 0%;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+   
+    <div class="x">
+        <div class="y"></div>
+        <div class="z"></div>
+    </div><br></br>
+
+
+    <div class="p">
+    </div>
+    
+</body>
+</html>
