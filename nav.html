@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;
+        padding: 0;
+         }
+         div
+         {
+           height: 50px;
+           background: palevioletred;
+         }
+        
+         ul
+
+        {
+        
+            text-align: center;
+            line-height: 50px;
+        }
+        .title
+
+        {   
+            /* background:white;  */
+            display: inline;
+            /* border: 2px solid blueviolet; */
+            margin-right:20px ;
+            letter-spacing: 1px;
+            position: relative;
+            padding: 17px;
+            
+
+            
+        }
+        a
+        {
+            text-decoration: none;
+            color:black;
+        }
+        .web
+        {   
+              background: red;
+            position: absolute;
+            top: 100%;
+            left: 0; 
+            list-style: none;
+            display: none;
+        
+    
+    
+        }
+        .title:hover .web
+        {
+           display: block;
+        } 
+        .number
+        { 
+            
+            background: yellow;
+            list-style: none;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+        }  
+        .Mobile
+        {
+            background-color: blueviolet;
+            list-style: none;
+            display: none;
+            position: absolute;
+            bottom: 0%;
+            left: 100%;
+            
+        
+        } 
+        .web:hover .number 
+        {
+            display: block;
+        }
+        .web:hover .Mobile 
+        {
+            display: block;
+            
+        }
+        
+
+    </style>
+    
+</head>
+<body>
+    <div>
+    <ul>
+        <li class="title"><a href="">Home</a></li>
+        <li class="title"><a href="">About</a></li>
+        <li class="title">
+            <a href="">Mobile No</a>
+                <ul class="web">
+
+                <li>
+                        <a href="">Himanshu</a>
+                                <ul class="number">
+                                   <li>8490948420</li>
+                                   <!-- <ul class="na">
+                                    <li>9998156649</li>
+                                   </ul> -->
+                                   
+                                   
+                                </ul>
+                
+                </li>
+                <li style="background: gray;">
+                        <a href="">Brijesh</a>
+                                <ul class="Mobile">
+                                   <li>8490948420</li>
+                        
+                                </ul> 
+                </li>
+        </li>
+                
+                
+
+
+                </ul>
+            
+        </li>
+        <li class="title"><a href="">Service</a></li> 
+        
+       
+    </ul>
+    </div>
+    
+</body>
+</html>
